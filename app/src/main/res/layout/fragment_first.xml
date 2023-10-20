@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.practica1_pablo.MainActivity">
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="279dp"
+        android:layout_height="68dp"
+        android:text="@string/benvingut_usuari"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <ImageView
+        android:id="@+id/noi"
+        android:clickable="true"
+        android:onClick="showNoi"
+        android:contentDescription="@string/noi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_first"
+        android:src="@drawable/noi"
+        tools:ignore="OnClick" />
+
+    <ImageView
+        android:id="@+id/noia"
+        android:clickable="true"
+        android:onClick="showNoia"
+        android:contentDescription="@string/noia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noi"
+        android:src="@drawable/noia"
+        tools:ignore="OnClick" />
+
+    <ImageView
+        android:id="@+id/gos"
+        android:clickable="true"
+        android:onClick="showGos"
+        android:contentDescription="@string/gos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noia"
+        android:src="@drawable/gos"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/noiadsc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/noia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toEndOf="@+id/noia"
+        app:layout_constraintTop_toTopOf="@+id/noia" />
+
+    <TextView
+        android:id="@+id/gosdesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/gos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toEndOf="@+id/gos"
+        app:layout_constraintTop_toTopOf="@+id/gos" />
+
+    <TextView
+        android:id="@+id/noidesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/noi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/noi"
+        app:layout_constraintTop_toTopOf="@+id/noi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
